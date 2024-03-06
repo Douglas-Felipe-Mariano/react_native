@@ -17,13 +17,13 @@ export default function Index() {
             <Text style={styles.paragraph}>
                 Exemplo 2
             </Text>
-                {saudacoes.map(Pessoa =>
-                    <Saudacoes name={Pessoa.nome}idade={Pessoa.idade}orientacao={Pessoa.orientacao}></Saudacoes>)}
+                {/* {saudacoes.map(Pessoa =>
+                    <Saudacoes name={Pessoa.nome}idade={Pessoa.idade}orientacao={Pessoa.orientacao}></Saudacoes>)} */}
                 
-                {/* <Saudacoes name='Mario'/>
+                <Saudacoes name='Mario'/>
                 <Saudacoes name='Maria'/>
                 <Saudacoes name='Bruna'/>
-                <Saudacoes name='Bruno'/> */}
+                <Saudacoes name='Bruno'/>
         </View>
     );
 }

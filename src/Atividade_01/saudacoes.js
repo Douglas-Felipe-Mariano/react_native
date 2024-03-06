@@ -4,8 +4,8 @@ const Saudacoes = (props) => {
     return(
         <Text style={{textAlign:"center"}}>
             Olá {props.name}
-            Idade: {props.idade}
-            Orinetação Sexual: {props.orientacao}
+            {/* Idade: {props.idade}
+            Orinetação Sexual: {props.orientacao} */}
         </Text>
     );
 }
