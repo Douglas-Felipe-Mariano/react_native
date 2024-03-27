@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         color: '#b71c1c', 
     }, 
     txtSaida: {
-        margin: 20, 
+        margin: 10, 
         fontSize: 25, 
         color: '#e53935', 
     }, 
