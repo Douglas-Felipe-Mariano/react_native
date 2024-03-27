@@ -1,38 +1,55 @@
-import { View, Text, TextInput, Pressable} from "react-native";
-import styles from "./styles";
-import {useState} from "react";
+import { useState } from 'react';
+import { View, Text, TextInput, Pressable } from 'react-native';
 
+import styles from './styles';
 
+export default function Exemplo4() {
 
+    const [isFocus, setIsFocus] = useState(false);
 
-export default function Ex_04(){
+    function focusHandler() {
+        setIsFocus(true);
+    }
 
-    const [mensagem, setMensagem] = useState("Sua mensagem aqui");
-    const [mensagem2, setMensagem2] = useState("Outra mensagem");
-    const [mensagemTela, setMensagemTela] = useState("");    
+    function blurHandler() {
+        setIsFocus(false);
+    }
 
-    return(
+    const [mensagem, setMensagem] = useState('Sua mensagem aqui!');
+    const [mens2, setMens2] = useState('Outra mensagem');
+    const [mensTela, setMensTela] = useState('');
+
+    function atualizaMensagemHandler() {
+        setMensTela(mens2);
+        setMens2('');
+    }
+
+    return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo 4</Text>
 
-            <Text style={styles.txt_saida}>{mensagem}</Text>
-
-            <TextInput 
-            style={styles.txt_entrada}
-            placeholder="Digite o texto aqui..."
-            onChangeText={(txt) => setMensagem(txt)}
-            />
-
-            <Text style={styles.txt_saida}>{mensagemTela}</Text>
+            <Text style={styles.txtSaida}>{mensagem}</Text>
 
             <TextInput
-            style={styles.txt_entrada}
-            // placeholder="Digite a outra mensagem..."
-            onChangeText={(entrada) => setMensagem2(entrada)}
+                style={isFocus ? { borderWidth: 3, borderColor: '#0f0' } : { borderWidth: 3, borderColor: '#00f' }}
+                placeholder='Digite o texto aqui...'
+                onChangeText={(txt) => setMensagem(txt)}
+                onFocus={() => focusHandler()}
+                onBlur={() => blurHandler()}
             />
 
-            <Pressable onPress={()=> setMensagemTela(mensagem2)} onChangeText={(mensagem2) => (mensagem2)}>
-                <Text>Exibir Mensagem</Text>
+            <Text style={styles.txtSaida}>{mensTela}</Text>
+            <TextInput
+                style={styles.txtEntrada}
+                // placeholder='Outro texto' 
+                onChangeText={(entrada) => setMens2(entrada)}
+                value={mens2}
+            />
+            <Pressable
+                onPress={() => atualizaMensagemHandler()}
+                style={styles.botao}
+            >
+                <Text style={styles.txtBotao}>Exibir mensagem</Text>
             </Pressable>
         </View>
     );
