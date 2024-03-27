@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1, 
         backgroundColor: '#ffcdd2', 
-        justifyContent: 'center', 
         alignItems: 'center', 
         width: '100%', 
         borderRadius: 20, 
@@ -41,6 +40,15 @@ const styles = StyleSheet.create({
         color: '#f5f5f5', 
         fontSize: 20,         
     },
+    nome_sobrenome: {
+        width:"70%"
+
+    },
+    txtnome: {
+        fontSize: 25, 
+        color: '#e53935',
+        fontWeight:"bold"
+    }
 }); 
 
 export default styles;
