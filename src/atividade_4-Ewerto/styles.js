@@ -4,8 +4,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1, 
         backgroundColor: '#ffcdd2', 
+        justifyContent: 'center', 
         alignItems: 'center', 
-        justifyContent:'center',
         width: '100%', 
         borderRadius: 20, 
     }, 
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         color: '#b71c1c', 
     }, 
     txtSaida: {
-        margin: 10, 
+        margin: 20, 
         fontSize: 25, 
         color: '#e53935', 
     }, 
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
         width: '70%', 
         color: '#e53935', 
         borderRadius: 10, 
+        marginVertical: 10, 
     }, 
     botao: {
         width: '70%', 
@@ -40,15 +41,9 @@ const styles = StyleSheet.create({
     txtBotao: {
         color: '#f5f5f5', 
         fontSize: 20,         
-    },
-    nome_sobrenome: {
-        width:"70%"
-
-    },
-    txtnome: {
-        fontSize: 25, 
-        color: '#e53935',
-        fontWeight:"bold"
+    }, 
+    botaoTouch: {
+        backgroundColor: '#e53935', 
     }
 }); 
 

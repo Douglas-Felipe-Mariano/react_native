@@ -16,8 +16,8 @@ export default function Exemplo4() {
     }
 
     const [mensagem, setMensagem] = useState('Seu Nome aqui!');
-    const [mens1, setMens1] = useState("Digite seu Nome");
-    const [mens2, setMens2] = useState('Digite seu Sobrenome');
+    const [mens1, setMens1] = useState("");
+    const [mens2, setMens2] = useState('');
     const [mensTela, setMensTela] = useState('');
 
     function atualizaMensagemHandler() {
@@ -39,6 +39,7 @@ export default function Exemplo4() {
 
             <TextInput
                 style={styles.txtEntrada}
+                placeholder='Digite Seu Nome...'
                 onChangeText={(entrada) => setMens1(entrada)}
                 value={mens1}
             />
@@ -51,6 +52,7 @@ export default function Exemplo4() {
 
             <TextInput
                 style={styles.txtEntrada}
+                placeholder='Digite Seu sobrenome...'
                 onChangeText={(entrada) => setMens2(entrada)}
                 value={mens2}
             />
