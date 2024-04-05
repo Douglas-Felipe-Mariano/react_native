@@ -8,6 +8,7 @@ import { StyleSheet, Text, View, Image} from 'react-native';
 // import Atividade_03   from './src/Atividade_03';
 // import Ex_04 from './src/Ex_04';
 import Ex_05 from './src/Ex_05';
+import { useState } from 'react';
 
 
 // export default function App() {
