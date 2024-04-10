@@ -37,6 +37,7 @@ export default function Ex_05(){
                 style={styles.txtentrada}
                 onChangeText={ (entrada) => setN1(entrada)}
                 value={n1}
+                keyboardType="numeric"
             >
 
             </TextInput>
@@ -48,6 +49,7 @@ export default function Ex_05(){
                 style={styles.txtentrada}
                 onChangeText={(entrada)=> setN2(entrada)}
                 value={n2}
+                keyboardType="numeric"
             >
             </TextInput>
 
@@ -58,6 +60,7 @@ export default function Ex_05(){
                 style={styles.txtentrada}
                 editable={false}
                 value={total}
+                keyboardType="numeric"
             >
             </TextInput>
 
