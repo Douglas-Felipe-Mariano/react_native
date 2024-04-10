@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         color:'#E91E63',
         
     },
-    txtEntrada:{
+    txtentrada:{
         borderWidth:4,
         textAlign:'center',
         fontSize:22,
@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
         marginTop:10,
     
     },
-    txtLabel:{
+    txtlabel:{
         fontSize:16,
         fontWeight:'bold',
         color:'#C51162'
     },
-    botao:{
+    button:{
         backgroundColor:'#E91E63',
         height:'40',
         justifyContent:'center',
@@ -52,22 +52,22 @@ const styles = StyleSheet.create({
         width:'23%',
        
     },
-    txtBotao:{
+    txtbutton:{
         fontSize:22,
         color:'#FF80AB',
         padding:8,
     },
-    teste:{
+    viewbotao:{
         flexDirection:"row",
         justifyContent:'space-between',
         alignItems:'center',
     },
-    zerar:{
+    button_zerar:{
         backgroundColor:'#E91E63',
-        height:'40',
+        height:35,
         justifyContent:'center',
         borderRadius:10,
-        marginTop:20,
+        marginTop:10,
         textAlign:'center',
         alignItems:"center",
         width:'100%',

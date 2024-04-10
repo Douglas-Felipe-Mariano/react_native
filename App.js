@@ -7,8 +7,9 @@ import { StyleSheet, Text, View, Image} from 'react-native';
 // import Ex_03 from './src/Ex_03';
 // import Atividade_03   from './src/Atividade_03';
 // import Ex_04 from './src/Ex_04';
-import Ex_05 from './src/Ex_05';
-import { useState } from 'react';
+// import Ex_05 from './src/Ex_05';
+// import { useState } from 'react';
+import Exemplo5 from './src/Atividade_5-Ewerto';
 
 
 // export default function App() {
@@ -24,7 +25,7 @@ import { useState } from 'react';
 export default function App(){
   return(
     <View style={styles.container}>
-      <Ex_05/>
+      <Exemplo5/>
     </View>
   );
 }
@@ -33,7 +34,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#c51162",
-    padding: 16,
+    padding: 8
+    ,
     alignItems:"center",
     justifyContent:"center",
   },

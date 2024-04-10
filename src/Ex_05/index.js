@@ -1,5 +1,5 @@
 import { View, Text, Pressable, TextInput, Touchable } from "react-native";
-import styles from "./syles";
+import styles from "./styles"
 import { useState } from "react";
 
 export default function Ex_05(){
@@ -28,16 +28,15 @@ export default function Ex_05(){
   
     return(
         <View style={styles.container} >
-            <Text style={styles.txtexemplo}>Exemplo_5</Text>
+            <Text style={styles.paragrafo}>Exemplo_5</Text>
             
-            <Text style={styles.txtSaida}>Calculadora básica</Text>
+            <Text style={styles.paragrafo}>Calculadora básica</Text>
 
             <Text style={styles.txtlabel}>1° número </Text>
             <TextInput 
                 style={styles.txtentrada}
                 onChangeText={ (entrada) => setN1(entrada)}
                 value={n1}
-                keyboardType="numeric"
             >
 
             </TextInput>
