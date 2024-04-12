@@ -9,7 +9,7 @@ import { StyleSheet, Text, View, Image} from 'react-native';
 // import Ex_04 from './src/Ex_04';
 // import Ex_05 from './src/Ex_05';
 // import { useState } from 'react';
-import Exemplo5 from './src/Atividade_5-Ewerto';
+import Exemplo_5 from './src/Atividade_5-Ewerto';
 
 
 // export default function App() {
@@ -25,7 +25,7 @@ import Exemplo5 from './src/Atividade_5-Ewerto';
 export default function App(){
   return(
     <View style={styles.container}>
-      <Exemplo5/>
+      <Exemplo_5/>
     </View>
   );
 }
