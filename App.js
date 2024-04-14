@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, Image} from 'react-native';
  
 
 // import Props from './src/Ex_02';
-import Index from './src/Atividade_01';
-
+// import Index from './src/Atividade_01';
+import Calculadora from './src/Calculadora do Iphone';
 
 
 // export default function App() {
@@ -20,7 +20,7 @@ import Index from './src/Atividade_01';
 export default function App(){
   return(
     <View style={styles.container}>
-      <Index/>
+      <Calculadora/>
     </View>
   );
 }
@@ -28,7 +28,7 @@ export default function App(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "blue",
+    backgroundColor: "black",
     padding: 8,
   },
 
