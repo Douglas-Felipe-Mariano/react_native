@@ -7,11 +7,9 @@ import { Dimensions } from "react-native";
 const styles = StyleSheet.create ({
     container:{
         flex:1,
-        alignItems:"center",
         width:"100%",
         justifyContent:"center",
         backgroundColor:"#EEE",
-        padding:8
     },
     paragraph:{
         margin:6,
