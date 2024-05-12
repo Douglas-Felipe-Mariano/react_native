@@ -4,7 +4,9 @@ import { StyleSheet, Text, View, Image} from 'react-native';
 
 // import Props from './src/Ex_02';
 // import Index from './src/Atividade_01';
-import Calculadora from './src/Calculadora do Iphone';
+// import Calculadora from './src/Calculadora do Iphone';
+import Titles from './src/Curso_native/components/titles/titles';
+import Main from './src/Curso_native/components/main'
 
 
 // export default function App() {
@@ -20,7 +22,8 @@ import Calculadora from './src/Calculadora do Iphone';
 export default function App(){
   return(
     <View style={styles.container}>
-      <Calculadora/>
+      <Titles/>
+      <Main/>
     </View>
   );
 }
@@ -28,8 +31,8 @@ export default function App(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "black",
-    padding: 8,
+    backgroundColor: "fff",
+    justifyContent:'center',
   },
 
 });
