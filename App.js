@@ -22,8 +22,8 @@ import Main from './src/Curso_native/components/main'
 export default function App(){
   return(
     <View style={styles.container}>
-      <Titles/>
-      <Main/>
+       <Titles/>
+       <Main/>
     </View>
   );
 }

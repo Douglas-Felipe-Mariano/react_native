@@ -3,8 +3,8 @@ import styles from "../../Styles/styles";
 
 export default function titles(){
     return(
-        <View style={styles.container}>
-            <Text style={styles.paragraph}>OneBitHealth</Text>
+        <View>
+            <Text>OneBitHealth</Text>
         </View>
     )
 };
