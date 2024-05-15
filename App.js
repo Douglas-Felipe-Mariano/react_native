@@ -13,7 +13,8 @@ import * as React from 'react'
 // import Atividade_03   from './src/Atividade_03';
 // import Ex_04 from './src/Ex_04';
 // import Ex_05 from './src/Ex_05';
-import Ex_07_de_novo from './src/Ex_07_de_novo';
+// import Ex_07_de_novo from './src/Ex_07_de_novo';
+import Ex_08 from './src/Ex_08';
 // import Ex_06 from './src/ex_6';
 // import Atividade_06 from './src/Atividade_06';
 
@@ -30,7 +31,7 @@ import Ex_07_de_novo from './src/Ex_07_de_novo';
 export default function App(){
   return(
     <View style={styles.container}>
-      <Ex_07_de_novo/>
+      <Ex_08/>
     </View>
   );
 }
@@ -38,8 +39,7 @@ export default function App(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent:"center",
-    backgroundColor: "#AAA",
+    backgroundColor: "#03A9F4",
     padding: 8,
   },
 
