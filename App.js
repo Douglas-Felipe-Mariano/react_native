@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, Image} from 'react-native';
  
 
 // import Props from './src/Ex_02';
-import Index from './src/Atividade_01';
-
+// import Index from './src/Atividade_01';
+import index from './src/Trecap/login'
 
 
 // export default function App() {
@@ -20,7 +20,7 @@ import Index from './src/Atividade_01';
 export default function App(){
   return(
     <View style={styles.container}>
-      <Index/>
+      <index/>
     </View>
   );
 }
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "blue",
     padding: 8,
+    opacity: '45%'
   },
 
 });
